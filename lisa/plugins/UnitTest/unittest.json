@@ -22,7 +22,7 @@
         "widgets": {
             "test": "lisa.plugins.UnitTest.web.views.widget1"
         }
-    }
+    },
     "cron": [{
         "name": "Test cron",
         "debug": 1,
