@@ -13,6 +13,7 @@ class UnitTest(IPlugin):
             inspect.getfile(inspect.currentframe()))[0],os.path.normpath("../lang/"))))
         self._ = translation = gettext.translation(domain='unittest',
                                                    localedir=self.path,
+                                                   fallback=True,
                                                    languages=[self.configuration_lisa['lang']]).ugettext
 
     def test(self, jsonInput):
